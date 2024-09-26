@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla-inspired Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        header { display: flex; align-items: center; margin-bottom: 20px; }
+        h1 { margin-right: 20px; }
+        main { margin-bottom: 20px; }
+        .further-info { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px; }
+        .further-info a { width: 23%; margin-bottom: 10px; }
+        .further-info img { width: 100%; height: auto; }
+        .red-panda img { max-width: 100%; height: auto; }
+        @media (max-width: 600px) {
+            .further-info a { width: 48%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mozilla</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Firefox_logo%2C_2019.svg" alt="small Firefox logo" width="120" height="120">
+    </header>
+
+    <main>
+        <article>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg?si=JF19cJJ3P5UnDxuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Rocking the free web</h2>
+            <p>Mozilla is a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible.</p>
+            <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mozillaeu/">More info</a></p>
+        </article>
+    </main>
+
+    <div class="further-info">
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_Logo%2C_2017.svg" alt="Firefox logo">
+        </a>
+        <a href="https://www.mozilla.org/">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Mozilla_dinosaur_logo.png" alt="Mozilla dinosaur head">
+        </a>
+        <a href="https://addons.mozilla.org/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Firefox_addons.svg" alt="Firefox addons">
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Mozilla_Developer_Network_logo.svg" alt="MDN logo">
+        </a>
+    </div>
+
+    <div class="red-panda">
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ailurus_fulgens_RoterPanda_LesserPanda.jpg">
+            <source media="(min-width: 601px)" srcset="https://upload.wikimedia.org/wikipedia/commons/1/12/Lesser_panda_full_body.JPG">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Lesser_panda_full_body.JPG" alt="picture of a red panda">
+        </picture>
+    </div>
+</body>
+</html>
 
